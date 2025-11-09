@@ -1,0 +1,22 @@
+
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/style.css")
+  body
+    h1 Add a New City
+
+    form(action="/update-city" method="POST")
+      label(for="name") City Name:
+      input(type="text" id="name" name="name" required)
+
+      label(for="state") State:
+      input(type="text" id="state" name="state" required)
+
+      label(for="zipcode") Zip Code:
+      input(type="text" id="zipcode" name="zipcode" required)
+
+      button(type="submit") Submit
+
+    a(href="/" class="back-link") ← Back to Homepage
